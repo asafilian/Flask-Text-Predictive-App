@@ -1,0 +1,66 @@
+<!-- Take all the repeated sections in home.html & about.html -->
+<!-- and paste it here in layout.html -->
+
+<!-- Bootsrap -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Bootstrap Copied from https://getbootstrap.com/docs/3.3/getting-started/ -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- `if-else` statement -->
+    {% if title %}
+        <title>SAF Predictive Text - {{title}}</title>
+    {% else %}
+        <title>SAF Predictive Text</title>
+    {% endif %}
+    <!-- Bootstrap core CSS -->
+    <!--link rel="stylesheet" href="https://getbootstrap.com/docs/3.3/dist/css/bootstrap.min.css"-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- linking to main.css in our static folder -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+
+</head>
+<body>
+<!-- Navigation Bar -->
+    <header class="site-header">
+      <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+        <div class="container">
+          <a class="navbar-brand mr-4" href="/">SAF Predictive Text</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggle">
+            <div class="navbar-nav mr-auto">
+              <a class="nav-item nav-link" href="/">Home</a>
+              <a class="nav-item nav-link" href="/about">About</a>
+              <a class="nav-item nav-link" href="https://github.com/asafilian/Flask-Text-Predictive-App" target="_blank">GitHub (Python)</a>
+              <a class="nav-item nav-link" href="https://asafilian.shinyapps.io/as_txtpredict/" target="_blank">Shiny App (R)</a>
+            </div>
+            <!-- Navbar Right Side -->
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End of Navigation Bar -->
+<!-- Main Section -->
+    <main role="main" class="container">
+      <div class="row">
+          <!-- block -->
+        <div class="col-md-8">
+          {% block content %}{% endblock %}
+        </div>
+          <!-- slide-bar -->
+      </div>
+    </main>
+<!-- End of Main Section -->
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

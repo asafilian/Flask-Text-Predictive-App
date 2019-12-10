@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="row">
+        <div class="8u">
+             <header>
+                <h1>SAF Predictive Text App</h1>
+                <p>
+                    SAF Predictive Text is a web-based application suggesting words the end user may wish to insert in a text field.
+                    To get access to the code sources for this app please visit my GitHub profile at <a href="https://github.com/asafilian/Flask-Text-Predictive-App" target="_blank"> GitHub </a> profile.
+                    The R Shiny app version of this prorduct can be found at <a href="https://asafilian.shinyapps.io/as_txtpredict/" target="_blank">Shiny Predictive Text App</a>.
+                </p>
+                <p>
+                    I analyzed a large corpus of text documents (more than 4 million lines, and over 102 million words) to discover the relationship between words.
+                    The primary training data for this project was provided by <a href="https://www.microsoft.com/en-us/swiftkey/about-us"> Swiftkey </a>.
+                </p>
+                <p>
+                    This app is based on an n-gram model (unigrams to deca-grams) to predict next words given a phrase.
+                    I followed the Stupid Backoff method in building the models.
+                    To calculate the n-gram probabilities, I used the Kneser-Ney smoothing method.
+                </p>
+            </header>
+            <header>
+                <h1>About Me: <strong>Ali Safilian</strong></h1>
+            </header>
+            <p>
+                As of Jan 2020, I am a Data Science Fellow at <a href="https://www.insightdatascience.com/" target="_blank">Insight Data Science</a>.
+                I hold a PhD from the <a href="http://www.cas.mcmaster.ca" target="_blank">Department of Computing and Software </a> at <a href="http://www.mcmaster.ca">McMaster University</a>.
+                My PhD was supervised by <a href="http://www.cas.mcmaster.ca/~maibaum/Toms_Mac_Site/Home_Page.html" target="_blank">Tom Maibaum</a>.
+                I previously worked as a Postdoc Researcher at McMaster Automotive Resource Centre, an Academic Staff in the Department of Software Engineering at Urmia University of Technology, a Software Engineer at Data Era Co.
+                <A HREF="mailto:a.a.safilian@gmail.com">Click Here To Email Me</A>
+            </p>
+        </div>
+
+
+</div>
+{% endblock content %}
