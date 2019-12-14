@@ -22,7 +22,7 @@ This repository includes the following folders:
 	- The final DataFrames are stored as pickled objects. These can can found in the folder **data_pickled** in the repository.
 2. **db-create**
 	- Used to create a MySQL database. You should put your connections in the DATABASE_URI variable. The given DataFrames can be found in the folder **data_pickled**.
-3. ***flask-pretictivetext***
+3. **flask-pretictivetext**
 	- The FLASK application including the prediction of next words.
 
 
