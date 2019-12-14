@@ -11,12 +11,13 @@
                 </p>
                 <p>
                     I analyzed a large corpus of text documents (more than 4 million lines, and over 102 million words) to discover the relationship between words.
-                    The primary training data for this project was provided by <a href="https://www.microsoft.com/en-us/swiftkey/about-us"> Swiftkey </a>.
+                    The primary training data for this project was provided by <a href="https://www.microsoft.com/en-us/swiftkey/about-us" target="_blank"> Swiftkey </a>.
                 </p>
                 <p>
-                    This app is based on an n-gram model (unigrams to deca-grams) to predict next words given a phrase.
+                    This app is based on an n-gram model (unigrams to hexa-grams) to predict next words given a phrase.
                     I followed the Stupid Backoff method in building the models.
                     To calculate the n-gram probabilities, I used the Kneser-Ney smoothing method.
+                    The final data is stored in AWS RDS (MySQL). The R Shiny version of this product can be found via <a href="https://asafilian.shinyapps.io/as_txtpredict/" target="_blank">this link</a>.
                 </p>
             </header>
             <header>

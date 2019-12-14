@@ -12,10 +12,10 @@
     <hr>
     <div class="article-metadata">
         <div class="form-group">
-            <textarea disabled name="suggestion" id="suggestion" rows="1" cols="100" placeholder="Suggestions will be displayed here...">{{ first }}</textarea>
+            <textarea disabled name="suggestion" id="suggestion" rows="1" cols="100">{{ first }}</textarea>
         </div>
     </div>
-    <h1>Words</h1>
+    <h2>Suggestions as Next Word</h2>
     {% for item in suggestions %}
                 <textarea disabled rows="1" col="100">{{ item }}</textarea>
     {% endfor %}

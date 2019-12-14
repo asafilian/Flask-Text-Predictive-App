@@ -1,4 +1,5 @@
 '''
+Number: 5
 Since our app will return the top-5 most likely word for a given sequence of words,
  it does not make sense to keep lower-rated n-grams.
 That's, in a ngrams table, for a given n-1-gram 'w1....wn-1', we keep top-5 ngrams 'w1...wn-1 w'
@@ -55,44 +56,44 @@ def keep_top_ngrams(typ, top=5, profanity=False, pickled=True):
     return prob_top
 
 
-# # Unigrams
-# prob_top_uni = keep_top_ngrams(typ='uni')
-# prob_top_uni_np = keep_top_ngrams(typ='uni', profanity=True)
-#
-#
-# # Bigrams
-# prob_top_bi = keep_top_ngrams(typ='bi')
-# prob_top_bi_np = keep_top_ngrams(typ='bi', profanity=True)
-#
-# # Trigrams
-# prob_top_tri = keep_top_ngrams(typ='tri')
-# prob_top_tri_np = keep_top_ngrams(typ='tri', profanity=True)
-#
-# # Quadgrams
-# prob_top_quad = keep_top_ngrams(typ='quad')
-# prob_top_quad_np = keep_top_ngrams(typ='quad', profanity=True)
-#
-#
-# # Pentagrams
-# prob_top_penta = keep_top_ngrams(typ='penta')
-# prob_top_penta_np = keep_top_ngrams(typ='penta', profanity=True)
-#
-# # Hexagrams
-# prob_top_hexa = keep_top_ngrams(typ='hexa')
-# prob_top_hexa_np = keep_top_ngrams(typ='hexa', profanity=True)
+# Unigrams
+prob_top_uni = keep_top_ngrams(typ='uni')
+prob_top_uni_np = keep_top_ngrams(typ='uni', profanity=True)
 
-# # Heptagrams
-# prob_top_hepta = keep_top_ngrams(typ='hepta')
-# prob_top_hepta_np = keep_top_ngrams(typ='hepta', profanity=True)
 
-# # Octagrams
-# prob_top_octa = keep_top_ngrams(typ='octa')
-# prob_top_octa_np = keep_top_ngrams(typ='octa', profanity=True)
+# Bigrams
+prob_top_bi = keep_top_ngrams(typ='bi')
+prob_top_bi_np = keep_top_ngrams(typ='bi', profanity=True)
 
-# # Nonagrams
-# prob_top_nona = keep_top_ngrams(typ='nona')
-# prob_top_nona_np = keep_top_ngrams(typ='nona', profanity=True)
+# Trigrams
+prob_top_tri = keep_top_ngrams(typ='tri')
+prob_top_tri_np = keep_top_ngrams(typ='tri', profanity=True)
 
-# # Decagrams
-# prob_top_deca = keep_top_ngrams(typ='deca')
-# prob_top_deca_np = keep_top_ngrams(typ='deca', profanity=True)
+# Quadgrams
+prob_top_quad = keep_top_ngrams(typ='quad')
+prob_top_quad_np = keep_top_ngrams(typ='quad', profanity=True)
+
+
+# Pentagrams
+prob_top_penta = keep_top_ngrams(typ='penta')
+prob_top_penta_np = keep_top_ngrams(typ='penta', profanity=True)
+
+# Hexagrams
+prob_top_hexa = keep_top_ngrams(typ='hexa')
+prob_top_hexa_np = keep_top_ngrams(typ='hexa', profanity=True)
+
+# Heptagrams
+prob_top_hepta = keep_top_ngrams(typ='hepta')
+prob_top_hepta_np = keep_top_ngrams(typ='hepta', profanity=True)
+
+# Octagrams
+prob_top_octa = keep_top_ngrams(typ='octa')
+prob_top_octa_np = keep_top_ngrams(typ='octa', profanity=True)
+
+# Nonagrams
+prob_top_nona = keep_top_ngrams(typ='nona')
+prob_top_nona_np = keep_top_ngrams(typ='nona', profanity=True)
+
+# Decagrams
+prob_top_deca = keep_top_ngrams(typ='deca')
+prob_top_deca_np = keep_top_ngrams(typ='deca', profanity=True)

@@ -1,21 +1,10 @@
 '''
-First read this:
-https://www.anotherbookondatascience.com/chapter3.html
-'''
-
-
-'''
-This models sequences of words using the statistical properties of n-grams.
+Number: 4
+This file models sequences of words using the statistical properties of n-grams.
 I follow the Markov assumption (or independence assumption).
 As for probabilities, I use and implement the Kneser-Ney Smoothing method.
 '''
-
 import pandas as pd
-
-
-
-# DTMs
-
 
 
 # --> Unigrams Probabilities (something wrong with this)
@@ -147,43 +136,43 @@ def kneserNey_ngrams(typ, discount_weight=0.75, profanity=False, pickled=True):
 
 
 #--> Probabilities of Unigrams
-# probs_uni = kneserNey_prob_uni()
-# probs_uni_notbad = kneserNey_prob_uni(profanity=True)
+probs_uni = kneserNey_prob_uni()
+probs_uni_notbad = kneserNey_prob_uni(profanity=True)
 
 # --> Probabilities of Bigrams
-# probs_bi = kneserNey_ngrams(typ='bi')
-# probs_bi = kneserNey_ngrams(typ='bi', profanity=True)
+probs_bi = kneserNey_ngrams(typ='bi')
+probs_bi = kneserNey_ngrams(typ='bi', profanity=True)
 
 # --> Probabilities of Trigrams
-# probs_tri = kneserNey_ngrams(typ='tri')
-# probs_tri = kneserNey_ngrams(typ='tri', profanity=True)
+probs_tri = kneserNey_ngrams(typ='tri')
+probs_tri = kneserNey_ngrams(typ='tri', profanity=True)
 
 
 # --> Probabilities of Quadgrams
-# probs_quad = kneserNey_ngrams(typ='quad')
-# probs_quad = kneserNey_ngrams(typ='quad', profanity=True)
+probs_quad = kneserNey_ngrams(typ='quad')
+probs_quad = kneserNey_ngrams(typ='quad', profanity=True)
 
 
 # --> Probabilities of Pentagrams
-# probs_penta = kneserNey_ngrams(typ='penta')
-# probs_penta = kneserNey_ngrams(typ='penta', profanity=True)
+probs_penta = kneserNey_ngrams(typ='penta')
+probs_penta = kneserNey_ngrams(typ='penta', profanity=True)
 
 
 # --> Probabilities of Hexagrams
-# probs_hexa = kneserNey_ngrams(typ='hexa')
-# probs_hexa = kneserNey_ngrams(typ='hexa', profanity=True)
+probs_hexa = kneserNey_ngrams(typ='hexa')
+probs_hexa = kneserNey_ngrams(typ='hexa', profanity=True)
 
 # --> Probabilities of Heptagrams
-# probs_hepta = kneserNey_ngrams(typ='hepta')
-# probs_hepta = kneserNey_ngrams(typ='hepta', profanity=True)
+probs_hepta = kneserNey_ngrams(typ='hepta')
+probs_hepta = kneserNey_ngrams(typ='hepta', profanity=True)
 
 # --> Probabilities of Octagrams
-# probs_octa = kneserNey_ngrams(typ='octa')
-# probs_octa = kneserNey_ngrams(typ='octa', profanity=True)
+probs_octa = kneserNey_ngrams(typ='octa')
+probs_octa = kneserNey_ngrams(typ='octa', profanity=True)
 
 # --> Probabilities of Nonagrams
-# probs_nona = kneserNey_ngrams(typ='nona')
-# probs_nona = kneserNey_ngrams(typ='nona', profanity=True)
+probs_nona = kneserNey_ngrams(typ='nona')
+probs_nona = kneserNey_ngrams(typ='nona', profanity=True)
 
 
 # --> Probabilities of Decagrams

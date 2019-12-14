@@ -1,3 +1,13 @@
+'''
+Number: 2
+We use the functions in this Python file to preprocess the raw corpus.
+It contains the following functions
+- 'clean_text'
+        preprocess/clean a given string
+- 'clean_text_source'
+        preprocess/clean all small text files associated with a given source (news, blogs, twitter)
+'''
+
 import re
 import string
 import os
@@ -59,10 +69,10 @@ def clean_text_source(source, profanity=False):
 
 
 # Uncomment to get cleaned data
-#clean_text_source('news')
-#clean_text_source('blogs')
-#clean_text_source('twitter')
+clean_text_source('news')
+clean_text_source('blogs')
+clean_text_source('twitter')
 
-#clean_text_source('news', profanity=True)
-#clean_text_source('blogs', profanity=True)
-#clean_text_source('twitter', profanity=True)
+clean_text_source('news', profanity=True)
+clean_text_source('blogs', profanity=True)
+clean_text_source('twitter', profanity=True)

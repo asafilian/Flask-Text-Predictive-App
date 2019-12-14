@@ -1,6 +1,12 @@
-import pickle
+'''
+Number: 1
+This file contains the following functions:
+- `get_corpus_info`
+        gets a general picture of the corpus
+- `split_bigfile`
+        split a given text file into several smaller files so that we can deal with scalability.
+'''
 import pandas as pd
-import numpy as np
 import os
 
 
